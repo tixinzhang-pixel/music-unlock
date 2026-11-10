@@ -294,6 +294,22 @@
       <p class="text-[10px] text-center text-zinc-400">
         免登录 · 极简信任制 · 解析成功后该特征自动记入云端学习库
       </p>
+      <div class="mt-4 border-t border-zinc-100 pt-3 text-center">
+        <p class="text-[10px] text-zinc-400">有问题或需要定制解析？</p>
+        <button onclick="document.getElementById('contactModal').classList.remove('hidden')" class="text-xs text-blue-600 hover:underline">添加作者微信</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 作者联系方式弹窗 -->
+  <div id="contactModal" class="hidden fixed inset-0 z-60 flex items-center justify-center p-4 bg-black/50 backdrop-blur-[2px]">
+    <div class="relative w-full max-w-sm bg-white border border-zinc-200 rounded-2xl p-6 shadow-xl space-y-4">
+      <button onclick="document.getElementById('contactModal').classList.add('hidden')" class="absolute top-4 right-4 w-7 h-7 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-500 hover:text-zinc-900 flex items-center justify-center text-xs transition">✕</button>
+      <h3 class="text-sm font-semibold text-zinc-900 text-center">添加作者微信</h3>
+      <div class="flex flex-col items-center space-y-2">
+        <img src="assets/contact_wechat.jpg" class="w-48 h-48 rounded-lg border border-zinc-200 shadow-sm">
+        <p class="text-[10px] text-zinc-500">扫一扫添加微信，获取最新解密规则更新</p>
+      </div>
     </div>
   </div>
 
